@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint \"**/*.ts*\" --fix"
+    "lint": "eslint \"**/*.ts*\" --fix",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "next": "latest",
@@ -15,9 +17,14 @@
     "ui": "*"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
     "@types/node": "18.11.3",
     "autoprefixer": "^10.4.12",
     "eslint-config-custom": "*",
+    "jest": "^29.3.1",
+    "jest-css-modules": "^2.1.0",
+    "jest-environment-jsdom": "^29.3.1",
     "next-transpile-modules": "^10.0.0",
     "postcss": "^8.4.18",
     "prettier-plugin-tailwindcss": "^0.1.13",
