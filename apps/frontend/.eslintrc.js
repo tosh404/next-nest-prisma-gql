@@ -19,7 +19,12 @@ module.exports = {
     project: ['./tsconfig.json'],
     sourceType: 'module',
   },
-  ignorePatterns: [],
+  ignorePatterns: [
+    '.eslintrc.js',
+    'jest.config.js',
+    'next.config.js',
+    'tailwind.config.js',
+  ],
   rules: {
     // '@next/next/no-html-link-for-pages': 'off',
     // 'react/jsx-key': 'off',

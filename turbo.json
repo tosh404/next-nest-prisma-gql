@@ -1,5 +1,7 @@
 {
   "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": [],
+  "globalEnv": [],
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
@@ -9,6 +11,7 @@
       "outputs": []
     },
     "test": {
+      "inputs": ["**/*.ts", "**/*.tsx", "test/**/*.ts", "test/**/*.tsx"],
       "outputs": []
     },
     "dev": {
