@@ -8,9 +8,9 @@
     "start": "next start",
     "lint": "eslint \"**/*.ts*\" --fix",
     "format": "prettier --write \"src/**/*.{ts,tsx}\" \"test/**/*.{ts,tsx}\"",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:cov": "jest --coverage"
+    "test": "jest --verbose",
+    "test:watch": "jest --watch --verbose",
+    "test:cov": "jest --coverage --verbose"
   },
   "dependencies": {
     "next": "latest",
