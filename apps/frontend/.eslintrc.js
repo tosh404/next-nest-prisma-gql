@@ -25,6 +25,8 @@ module.exports = {
     'postcss.config.js',
     'next.config.js',
     'jest.config.js',
+    'test/jest.setup.js',
+    'test/tsconfig.jest.json',
   ],
   rules: {
     // '@next/next/no-html-link-for-pages': 'off',
