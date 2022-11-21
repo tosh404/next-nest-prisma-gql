@@ -14,6 +14,10 @@
       "inputs": ["**/*.ts", "**/*.tsx", "test/**/*.ts", "test/**/*.tsx"],
       "outputs": []
     },
+    "test:cov": {
+      "inputs": ["**/*.ts", "**/*.tsx", "test/**/*.ts", "test/**/*.tsx"],
+      "outputs": []
+    },
     "dev": {
       "cache": false
     },

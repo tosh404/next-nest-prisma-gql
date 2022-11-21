@@ -11,6 +11,7 @@
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "test": "turbo run test",
+    "test:cov": "turbo run test:cov",
     "format": "turbo run format",
     "prepare": "husky install"
   },
