@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import Home from '../pages/index';
+import Home from '../src/pages/index';
 
 it('Should render nextjs', () => {
   render(<Home />);

@@ -5,7 +5,8 @@
   "types": "./index.tsx",
   "license": "MIT",
   "scripts": {
-    "lint": "TIMING=1 eslint \"**/*.ts*\" --fix"
+    "lint": "TIMING=1 eslint \"**/*.ts*\" --fix",
+    "format": "prettier --write \"**/*.ts*\""
   },
   "devDependencies": {
     "@types/react": "^17.0.37",

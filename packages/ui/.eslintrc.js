@@ -8,8 +8,8 @@ module.exports = {
   extends: [
     'custom',
     'plugin:react/recommended',
+    'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
-    'next',
   ],
   plugins: ['react', 'react-hooks', '@typescript-eslint', 'prettier'],
   root: true,
@@ -19,11 +19,16 @@ module.exports = {
     project: ['./tsconfig.json'],
     sourceType: 'module',
   },
-  ignorePatterns: [],
+  ignorePatterns: ['.eslintrc.js', 'tailwind.config.js', 'postcss.config.js'],
   rules: {
-    '@next/next/no-html-link-for-pages': 'off',
+    // '@next/next/no-html-link-for-pages': 'off',
     // 'react/jsx-key': 'off',
-    'react/jsx-uses-react': 'off',
-    'react/react-in-jsx-scope': 'off',
+    // 'react/jsx-uses-react': 'off',
+    // 'react/react-in-jsx-scope': 'off',
+  },
+  settings: {
+    react: {
+      version: 'detect',
+    },
   },
 };

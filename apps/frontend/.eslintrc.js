@@ -21,9 +21,10 @@ module.exports = {
   },
   ignorePatterns: [
     '.eslintrc.js',
-    'jest.config.js',
-    'next.config.js',
     'tailwind.config.js',
+    'postcss.config.js',
+    'next.config.js',
+    'jest.config.js',
   ],
   rules: {
     // '@next/next/no-html-link-for-pages': 'off',
