@@ -1,11 +1,8 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "paths": {
-      "@/*": ["./*"]
-    },
-    "target": "ES5",
-    "module": "esnext",
+    "target": "ES2020",
+    "module": "ESNext",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -16,7 +13,7 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "react-jsx"
   },
   "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]

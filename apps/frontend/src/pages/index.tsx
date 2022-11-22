@@ -1,7 +1,10 @@
+import { Button } from 'ui';
+
 function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
-      <h2>Next.js!</h2>
+    <div className="container">
+      <h3 className="text-red-500 hover:text-blue-500">Next.js!</h3>
+      <Button />
     </div>
   );
 }
