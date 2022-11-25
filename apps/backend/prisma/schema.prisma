@@ -1,0 +1,23 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// automatically generate a DBML schema from your Prisma Schema every time 'npx prisma generate' runs.
+// use dbdiagram.io to visualize your dbml files as Entity-Relationship Diagram:
+generator dbml {
+  provider = "prisma-dbml-generator"
+  // additional options here (see https://github.com/notiz-dev/prisma-dbml-generator#additional-options)
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id   String @id @default(uuid())
+  name String
+}
