@@ -12,7 +12,7 @@ module.exports = {
     tsconfigRootDir: __dirname,
     sourceType: 'module',
   },
-  ignorePatterns: [],
+  ignorePatterns: ['.eslintrc.js', 'tests/**/*.ts'],
   rules: {
     '@typescript-eslint/interface-name-prefix': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
