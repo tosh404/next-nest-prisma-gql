@@ -1,6 +1,9 @@
 # compiled output
 /dist
 /node_modules
+prisma/*.db
+prisma/migrations/dev/
+src/graphql.ts
 
 # Logs
 logs
@@ -36,5 +39,3 @@ lerna-debug.log*
 
 .env
 .env.development.local
-
-src/graphql
